@@ -1,0 +1,241 @@
+.productDetails {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.productImage {
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    display: block;
+}
+
+.productDetails h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0 0 0.5vh 0;
+    color: #111;
+}
+
+.productDetails h3 {
+    font-size: 1.2rem;
+    margin: 0 0 2vh 0;
+    color: #555;
+}
+
+.productDetails h4 {
+    font-size: 1.4rem;
+    margin: 0 0 1vh 0;
+    color: #111;
+
+}
+
+.shortDesc {
+    font-size: 1rem;
+    color: #333;
+    margin: 0 0 1vh 0;
+}
+
+.quantity_container {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.quantity_label {
+    font-size: 1rem;
+    color: #333;
+}
+
+.quantity_value {
+    font-size: 1.1rem;
+    padding: 0.2rem 0.8rem;
+    border-radius: 6px;
+    background-color: #f3f4f6;
+    color: #111;
+}
+
+.quantity_btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    transition: transform 0.2s ease;
+}
+
+.quantity_btn:hover {
+    transform: scale(1.1);
+}
+
+.button_container {
+    display: flex;
+    gap: 3rem;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+}
+
+.buttonadd {
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 999px;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+}
+
+.buttonadd:hover {
+    background-color: #222;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+    cursor: pointer;
+    color: #222;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 2vh 0 2vh 0;
+}
+
+hr {
+    border: none;
+    border-top: 0.15vh solid #D3D3D3;
+    width: auto;
+    margin: 1vh auto;
+}
+
+.dropdownLeft {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.icon {
+    font-size: 1.2rem;
+    color: #777;
+    margin-right: 1rem;
+}
+
+.arrow {
+    font-size: 1.2rem;
+    color: #999;
+    transition: transform 0.3s ease;
+    margin-left: auto;
+    margin-right: 1.5rem;
+}
+
+.rotated {
+    transform: rotate(180deg);
+}
+
+.dropdownContent {
+    margin-left: 2.3vw;
+    width: 35vw;
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    margin: 10vh 0 0 10vw;
+    padding: 0.75rem 1rem;
+    background: #fff;
+    border-radius: 8px;
+    width: fit-content;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+.homeIcon {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #000;
+    text-decoration: none;
+}
+
+.separator {
+    color: #888;
+    margin: 0 0.25rem;
+    user-select: none;
+}
+
+
+.crumb, .homeIcon:hover {
+    color: #111;
+    text-decoration: underline;
+}
+
+.current {
+    color: #2563eb;
+    font-weight: 500;
+}
+
+
+@media (max-width: 768px) {
+    .productDetails {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .productImage {
+        width: 100%;
+        max-height: 400px;
+        object-fit: contain;
+    }
+
+    .buttonadd {
+        padding: 1rem 1.5rem; /* Slightly reduced padding for small screens */
+        font-size: 3.5vw; /* Use viewport width to scale the font size */
+        width: 100%; /* Button takes up the full width on very small screens */
+        text-align: center;
+    }
+
+    .button_container {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .dropdown {
+        flex-direction: row;
+    }
+}
+
+.outOfStock {
+    color: #d93025; /* red */
+    font-weight: bold;
+}
+
+.lowStock {
+    color: #e69500; /* amber/orange */
+    font-weight: bold;
+}
+
+.inStock {
+    color: #2f8f4e; /* green */
+}
+

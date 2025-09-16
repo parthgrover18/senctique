@@ -1,0 +1,171 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 1rem;
+}
+
+.card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 12px;
+}
+
+
+.chenge {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.input:last-child {
+    margin-bottom: 0;
+}
+
+
+.input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.submitBtn {
+    width: 100%;
+    background-color: #000;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 16px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submitBtn:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+.loginText {
+    font-size: 14px;
+    color: #666;
+    margin-top: 16px;
+}
+
+.loginLink {
+    color: #007bff;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.loginLink:hover {
+    text-decoration: underline;
+}
+
+.termsText {
+    font-size: 12px;
+    color: #999;
+    margin-top: 16px;
+}
+
+.termsLink {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.termsLink:hover {
+    color: #0056b3;
+}
+
+@media (max-width: 500px) {
+    .card {
+        padding: 1.5rem;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .submitBtn {
+        font-size: 1rem;
+    }
+
+    .input {
+        font-size: 0.9rem;
+    }
+}
+
+.inputWrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.toggleBtn {
+    position: absolute;
+    right: 12px;
+    top: 45%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.inputError {
+    border-color: red;
+    box-shadow: 0 0 4px rgba(255, 0, 0, 0.5);
+}
+
+.errorText {
+    color: red;
+    font-size: 0.85rem;
+    margin: -8px 0 10px 0;
+    text-align: left;
+}
+
+

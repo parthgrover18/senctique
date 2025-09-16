@@ -1,0 +1,149 @@
+
+.container {
+    padding: 30px 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    margin: 10vh 0 0 10vw;
+    padding: 0.75rem 1rem;
+    background: #fff;
+    border-radius: 8px;
+    width: fit-content;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+.homeIcon {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #000;
+    text-decoration: none;
+}
+
+.separator {
+    color: #888;
+    margin: 0 0.25rem;
+    user-select: none;
+}
+
+.crumb {
+    color: #222;
+    text-decoration: none;
+}
+
+.crumb, .homeIcon:hover {
+    color: #111;
+    text-decoration: underline;
+}
+
+.current {
+    color: #2563eb;
+    font-weight: 500;
+}
+
+.shopLayout {
+    max-width: 100%;
+    display: flex;
+}
+
+.filterContainer {
+    width: 350px;
+    margin: 60px 0 0 40px;
+}
+
+.productContainer {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.productCard {
+    width: calc(33.33% - 10px);
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.productCard:hover {
+    transform: translateY(-5px);
+}
+
+.productImage {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.productTitle {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.productPrice {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 5px;
+}
+
+@media (max-width: 480px) {
+    .breadcrumb {
+        margin: 5vh 0 0 5vw; /* Adjusted margin for smaller screens */
+        padding: 0.4rem 0.6rem; /* Reduced padding further */
+        font-size: 0.8rem; /* Adjusted font size for very small screens */
+    }
+
+    .homeIcon {
+        font-size: 0.85rem; /* Adjusted home icon size */
+    }
+
+    .separator {
+        font-size: 0.85rem; /* Adjusted separator font size */
+    }
+
+    .crumb {
+        font-size: 0.85rem; /* Adjusted font size for crumbs */
+    }
+
+    .current {
+        font-size: 0.85rem; /* Adjusted font size for current breadcrumb */
+    }
+
+    .filterContainer {
+        width: 100%; /* Filter container takes full width */
+        margin: 20px 0 15px 0; /* Adjusted margin */
+    }
+
+    .productContainer {
+        flex: 1; /* Product container takes full width */
+    }
+
+    .productCard {
+        width: 100%; /* Each product takes full width of the screen */
+        margin-bottom: 20px; /* Increased margin for spacing */
+    }
+
+    .productImage {
+        height: 180px; /* Adjusted height for product image */
+        object-fit: cover; /* Ensure image fits well */
+    }
+
+    .productTitle {
+        font-size: 0.95rem; /* Slightly smaller font size */
+    }
+
+    .productPrice {
+        font-size: 0.85rem; /* Smaller font size */
+    }
+}

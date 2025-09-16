@@ -1,0 +1,166 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5vw 2vw;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.logo {
+    font-family: 'Vivaldi', cursive;
+    font-size: 3.5rem;
+    color: #333;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+.mobileMenuIcon {
+    display: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.1rem;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navItem {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+    position: relative;
+}
+
+.navItem:hover {
+    color: burlywood;
+}
+
+.navItem::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 100%;
+    background-color: burlywood;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.navItem:hover::after {
+    transform: scaleX(1);
+}
+
+.navItem.active {
+    color: burlywood;
+}
+
+.navItem.active::after {
+    transform: scaleX(1);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+    list-style: none;
+}
+
+.dropdown:hover .dropdownMenu {
+    background-color: white;
+    display: block;
+}
+
+.dropdownMenu li {
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+}
+
+.dropdownMenu li a {
+    color: #333;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+
+.dropdownMenu li a:hover {
+    color: burlywood;
+}
+
+.dropdownMenu li a:hover::after {
+    transform: scaleX(1);
+}
+
+.dropdownMenu li a.active {
+    color: burlywood;
+}
+
+.dropdownMenu li a.active::after {
+    transform: scaleX(1);
+}
+
+
+.searchBar {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+}
+
+.cart {
+    position: relative;
+}
+
+
+@media (max-width: 480px) {
+    .navLinks {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        display: none;
+        z-index: 999;
+        padding: 1rem 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navLinks.active {
+        display: flex;
+    }
+
+    .navLinks li {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .mobileMenuIcon {
+        display: block;
+    }
+}
+

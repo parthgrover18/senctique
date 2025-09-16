@@ -1,0 +1,78 @@
+
+.container {
+    padding: 30px 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    margin: 10vh 0 0 10vw;
+    padding: 0.75rem 1rem;
+    background: #fff;
+    border-radius: 8px;
+    width: fit-content;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+.homeIcon {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #000;
+    text-decoration: none;
+}
+
+.separator {
+    color: #888;
+    margin: 0 0.25rem;
+    user-select: none;
+}
+
+.crumb {
+    color: #222;
+    text-decoration: none;
+}
+
+.crumb, .homeIcon:hover {
+    color: #111;
+    text-decoration: underline;
+}
+
+.current {
+    color: #2563eb;
+    font-weight: 500;
+}
+
+/* Mobile responsiveness for the container */
+.container {
+    padding: 15px 10px; /* Adjusted padding for smaller screens */
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+/* Additional adjustments for very small screens (max-width 480px) */
+@media (max-width: 480px) {
+    .breadcrumb {
+        margin: 4vh 0 0 4vw; /* Adjust margin further */
+        padding: 0.5rem 0.75rem; /* Consistent padding */
+        font-size: 0.8rem; /* Slightly smaller font size for very small screens */
+    }
+
+    .homeIcon {
+        font-size: 0.85rem; /* Smaller home icon size */
+    }
+
+    .separator {
+        font-size: 0.85rem; /* Smaller separator font size */
+    }
+
+    .crumb {
+        font-size: 0.85rem; /* Smaller font size for crumbs */
+    }
+}

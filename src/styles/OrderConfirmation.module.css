@@ -1,0 +1,157 @@
+.confirmationContainer {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.confirmationContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.confirmationContent h1 {
+    font-size: 2rem;
+    color: black;
+    font-weight: 700;
+}
+
+.confirmationContent p {
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    max-width: 600px;
+}
+
+.orderSummary {
+    width: 100%;
+    border-radius: 12px;
+    padding: 2rem;
+    border: 1px solid #e5e3e0;
+    margin-top: 2rem;
+}
+
+.orderSummary h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    color: black;
+    border-bottom: 1px solid #e0d8ce;
+    padding-bottom: 0.5rem;
+}
+
+.orderSummary h3 {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.orderSummary > div {
+    font-size: 0.95rem;
+    color: black;
+    margin-bottom: 0.5rem;
+}
+
+.itemDetails {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1rem 0;
+    border-top: 1px solid #eee6de;
+}
+
+.itemDetails:first-of-type {
+    border-top: none;
+}
+
+.productImage {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: #f6f4f1;
+}
+
+.itemDetails div {
+    font-size: 0.92rem;
+    color: black;
+    line-height: 1.4;
+}
+
+.continueShoppingButton {
+    margin-top: 2rem;
+    background-color: burlywood;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.continueShoppingButton:hover {
+    background-color: rgb(221, 169, 102);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+    .confirmationContainer {
+        max-width: 100%;
+        margin: 2rem auto;
+        padding: 1.5rem;
+    }
+
+    .confirmationContent h1 {
+        font-size: 1.5rem;
+    }
+
+    .confirmationContent p {
+        font-size: 0.9rem;
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .orderSummary {
+        padding: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .orderSummary h2 {
+        font-size: 1.2rem;
+    }
+
+    .orderSummary h3 {
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .orderSummary > div {
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .itemDetails {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.8rem 0;
+    }
+
+    .productImage {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 0.5rem;
+    }
+
+    .continueShoppingButton {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+

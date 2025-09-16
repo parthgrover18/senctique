@@ -1,0 +1,147 @@
+.name {
+    margin: 100px 0 50px 300px;
+}
+
+.favoriteList {
+    list-style: none;
+    padding: 10px;
+    margin: 0 350px 150px 350px;
+}
+
+.favoriteItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: #F5F7F8;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.favoriteItem:hover {
+    transform: scale(1.02);
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.productImage {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    mix-blend-mode: darken;
+}
+
+.favoriteItem:hover .productImage {
+    transform: scale(1.1);
+}
+
+.productInfo h3 {
+    font-size: 1.1em;
+    color: #333;
+    font-weight: 600;
+}
+
+.productInfo p {
+    font-size: 0.9em;
+    color: #777;
+    margin: 0;
+}
+
+.removeButton {
+    background-color: burlywood;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: auto;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+    margin-right: 30px;
+}
+
+.removeButton:hover {
+    background-color: rgb(213, 148, 61);
+}
+
+.removeButton:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.removeButton:active {
+    background-color: #e05b5b;
+}
+
+.noFavoritesText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+
+@media screen and (max-width: 480px) {
+    .name {
+        margin: 40px 15px 20px 15px;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    .favoriteList {
+        margin: 0 15px 60px 15px;
+        padding: 0;
+    }
+
+    .favoriteItem {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .link {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .productImage {
+        width: 70px;
+        height: auto;
+        max-height: 70px;
+        border-radius: 10px;
+        margin-right: 0;
+        mix-blend-mode: darken;
+    }
+
+    .productInfo h3 {
+        font-size: 1rem;
+        margin-bottom: 4px;
+    }
+
+    .productInfo p {
+        font-size: 0.85rem;
+    }
+
+    .removeButton {
+        width: 100%;
+        margin: 10px 0 0 0;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .noFavoritesText {
+        margin: 50px 10px;
+        text-align: center;
+        font-size: 1rem;
+    }
+}
